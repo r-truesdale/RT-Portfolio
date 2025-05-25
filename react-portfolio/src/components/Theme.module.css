@@ -1,0 +1,9 @@
+.sectionCard {
+ width: 96vw;
+ height: 40vh;
+ border: 0.3rem solid var(--color-border);
+ margin: 4vh auto ;
+ background-color: var(--color-primary);
+ justify-content: center;
+ height: fit-content;
+}

@@ -1,0 +1,54 @@
+@import "../var.css";
+
+/* .about {} */
+/* 
+.sectionCard {
+ width: 96vw;
+ height: 40vh;
+ border: 0.3rem solid var(--color-border);
+ margin: 4vh auto ;
+ background-color: var(--color-primary);
+ justify-content: center;
+ height: fit-content;
+} */
+@media screen and (min-width: 651px) {
+  .title {
+    font-size: 9vh;
+  }
+    .introTxt{
+    font-size: 8vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .title {
+    font-size: 5vh;
+  }
+  .introTxt{
+    font-size: 5vh;
+  }
+}
+.title {
+ /* display: flex; */
+ font-weight: bold;
+ margin: 8vh auto;
+ /* margin: 8vh 5vw; */
+ width: 60vw;
+ background-color: var(--color-highlight);
+ color: var(--color-bg);
+ border-radius: 0.5rem;
+ padding: 4vh 8vw;
+ box-shadow: var(--color-border) 6px 6px;
+  text-align: center;
+}
+
+.introTxt {
+ margin: 10vh auto;
+ width: 80vw;
+ /* font-size: 8vh; */
+ text-align: center;
+}
+
+.emphasis{
+ color: var(--color-secondary);
+ font-weight: bolder;
+}

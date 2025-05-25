@@ -1,0 +1,12 @@
+:root {
+ /* Colours */
+ --color-text: #000000;
+ --color-primary: #FAF6DD;
+ --color-secondary: #8D3F2A;
+ --color-tertiary: #335C67;
+ --color-bg: #F4EEEC;
+ --color-border: #1B383F;
+ --color-highlight: #D8A646;
+ /* Fonts */
+ --font-main: 'Lexend Variable', sans-serif;
+}

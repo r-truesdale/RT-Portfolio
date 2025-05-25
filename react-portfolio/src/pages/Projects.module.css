@@ -1,0 +1,49 @@
+@import "../var.css";
+
+.projIntro{
+ font-weight: bold;
+ margin: 8vh auto;
+ width: 70vw;
+ height: fit-content;
+ background-color: var(--color-highlight);
+ color: var(--color-bg);
+ border-radius: 0.5rem;
+ padding: 3vh 2vw;
+ box-shadow: var(--color-border) 0.5vw 1vh;
+  text-align: center;
+}
+
+@media screen and (min-width: 651px) {
+  .projTitle {
+    font-size: 5vh;
+  }
+    .introTxt{
+    font-size: 2.5vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  .projTitle {
+    font-size: 3vh;
+  }
+  .introTxt{
+    font-size: 2vh;
+  }
+}
+
+.projTitle{
+}
+.introTxt{
+ font-weight: 400;
+ margin: 3vh 0;
+}
+.skills{
+ color: var(--color-secondary);
+ font-weight: 700;
+ font-size: 3vh;
+ display: flex;
+ flex-direction: row;
+justify-content: space-between;
+padding-top: 0vh;
+}
+
+
