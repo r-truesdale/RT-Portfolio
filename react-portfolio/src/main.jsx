@@ -7,7 +7,7 @@ import '@fontsource-variable/lexend';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/react-portfolio">
       <App />
     </BrowserRouter>
   </StrictMode>,
