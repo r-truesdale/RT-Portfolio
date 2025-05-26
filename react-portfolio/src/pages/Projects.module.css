@@ -1,15 +1,55 @@
 @import "../var.css";
 
-.projIntro{
- font-weight: bold;
- margin: 8vh auto;
- width: 70vw;
- height: fit-content;
- background-color: var(--color-highlight);
- color: var(--color-bg);
- border-radius: 0.5rem;
- padding: 3vh 2vw;
- box-shadow: var(--color-border) 0.5vw 1vh;
+.projCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  height: fit-content;
+}
+
+.projCard {
+  width: 31%;
+  height: fit-content;
+  margin: 2vh auto;
+  padding: 0;
+  /* border-radius: 0.5rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s ease-out;
+  border: var(--color-border) 0.3rem solid;
+}
+
+.projCard:hover {
+  box-shadow: var(--color-border) 0.5vw 1vh;
+}
+
+.projName {
+  font-size: 3vh;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin: auto;
+}
+
+.projDesc {
+  font-size: 2vh;
+  color: var(--color-text);
+  text-align: center;
+  margin: 1vh auto;
+}
+
+.projIntro {
+  font-weight: bold;
+  margin: 8vh auto;
+  width: 70vw;
+  height: fit-content;
+  background-color: var(--color-highlight);
+  color: var(--color-bg);
+  border-radius: 0.5rem;
+  padding: 3vh 2vw;
+  box-shadow: var(--color-border) 0.5vw 1vh;
   text-align: center;
 }
 
@@ -17,33 +57,55 @@
   .projTitle {
     font-size: 5vh;
   }
-    .introTxt{
+
+  .introTxt {
     font-size: 2.5vh;
   }
 }
+
 @media screen and (max-width: 650px) {
   .projTitle {
     font-size: 3vh;
   }
-  .introTxt{
+
+  .introTxt {
     font-size: 2vh;
   }
 }
 
-.projTitle{
-}
-.introTxt{
- font-weight: 400;
- margin: 3vh 0;
-}
-.skills{
- color: var(--color-secondary);
- font-weight: 700;
- font-size: 3vh;
- display: flex;
- flex-direction: row;
-justify-content: space-between;
-padding-top: 0vh;
+.projTitle {}
+
+.introTxt {
+  font-weight: 400;
+  margin: 3vh 0;
 }
 
+.skills {
+  color: var(--color-secondary);
+  font-weight: 700;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0vh;
+}
 
+.infoCard {
+  width: 55vw;
+  height: fit-content;
+  margin: 2vh auto;
+  padding: 2vh 1vw;
+  background-color: var(--color-secondary);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoTxt {
+  font-size: 2vh;
+  color: var(--color-bg);
+  text-align: center;
+  margin: 1vh auto;
+}
