@@ -7,16 +7,16 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 
 function App() {
- return (
-  <div className={styles.App}>
-   <Navbar></Navbar>
-   <Routes>
-    <Route path="/about" element={<About />} />
-    <Route path="/projects" element={<Projects />} />
-    {/* <Route path="/contact" element={<Contact />} /> */}
-   </Routes>
-  </div>
- );
+  return (
+    <div className={styles.App}>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path="RT-Portfolio/about" element={<About />} />
+        <Route path="RT-Portfolio/projects" element={<Projects />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
