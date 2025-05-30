@@ -1,50 +1,74 @@
 @import "../var.css";
 
+.projSection {
+  padding-bottom: 5vh;
+}
+
 .projCards {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   height: fit-content;
+  align-items: stretch;
+  /*keep cards same heigh if one has more text*/
+}
+
+#projects {
+  min-height: fit-content;
 }
 
 .projCard {
-  width: 31%;
-  height: fit-content;
-  margin: 2vh auto;
-  padding: 0;
-  /* border-radius: 0.5rem; */
   display: flex;
   flex-direction: column;
+  width: 31%;
+  min-height: fit-content;
   align-items: center;
-  transition: box-shadow 0.2s ease-out;
+  text-align: center;
+  padding: 1vh 1vw;
+  margin: 2vh auto;
+  transition: box-shadow 0.1s ease-in;
   border: var(--color-border) 0.2rem solid;
+  box-sizing: border-box;
 }
 
 .projCard:hover {
-  box-shadow: var(--color-border) 0.5vw 1vh;
+  box-shadow: var(--color-border) 0.7rem 0.7rem;
+  background-color: var(--color-tertiary);
+  color: var(--color-bg);
+  border: 0.2rem solid transparent;
+}
+
+.projCard:hover .projDesc {
+  color: var(--color-bg);
+}
+
+.projCard:hover .projName {
+  color: var(--color-primary);
+  text-shadow: -1px -1px black;
 }
 
 .projName {
-  font-size: 3vh;
+  font-size: 28px;
   font-weight: 700;
   color: var(--color-secondary);
-  margin: auto;
-  padding: 1vh 0;
+  margin: 10px auto;
 }
 
 .projThumbnail {
   width: 100%;
-  height:  100%;
-  object-fit: cover;
+  height: fit-content;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .projDesc {
   font-size: 2vh;
   color: var(--color-text);
   text-align: center;
-  margin: 1vh auto;
-  padding: 1vh 1vw;
+  margin: auto;
+  padding: 5vh 0;
+  width: 100%;
 }
 
 .projIntro {
@@ -68,6 +92,19 @@
   .introTxt {
     font-size: 2.5vh;
   }
+
+  .projDesc {
+    font-size: 15px;
+  }
+
+  .projName {
+    font-size: 28px;
+  }
+
+  .infoTxt {
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -77,6 +114,18 @@
 
   .introTxt {
     font-size: 2vh;
+  }
+
+  .projDesc {
+    font-size: 8px;
+  }
+
+  .projName {
+    font-size: 14px;
+  }
+
+  .infoTxt {
+    font-size: 8px;
   }
 }
 
@@ -106,18 +155,28 @@
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.exclamationIcon {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-bg);
 }
 
 .infoTxt {
-  font-size: 2vh;
   color: var(--color-bg);
   text-align: center;
   margin: 1vh auto;
+  width: 100%;
 }
 
-.infoCard2{
+.infoCard2 {
   width: 65vw;
   height: fit-content;
   margin: 2vh auto;
@@ -129,4 +188,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.gdtIntroImg {
+  display: grid;
+  grid-template-columns: [first] 13vw [line2] 37vw [line3] 37vw [line4] 13vw;
+    /* flex-direction: row; */
+    height: 310px;
+  height: fit-content;
+  margin: 8vh auto;
+  /* justify-content: space-evenly; */
+}
+
+.gdtInfoCard2Txt {
+  width: 40vw;
+  height:  fit-content;
+  margin: auto;
+  padding: 3vh 1vw;
+  place-self: center;
+}
+
+.gdtEnviro {
+  height: 310px;
+  border-radius: 0.5rem;
+  place-self: center;
 }
