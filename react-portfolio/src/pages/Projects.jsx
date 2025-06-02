@@ -4,6 +4,10 @@ import themes from "../components/Theme.module.css";
 import exCircle from "../assets/exclamation-circle.svg";
 import gTwinImg from "../assets/gdt4.png";
 import gTwinEnviro from "../assets/gdt.png";
+import gTwinStats1 from "../assets/gdtstats1.png";
+import gTwinStats2 from "../assets/gdtstats2.png";
+import gTwinStats3 from "../assets/gdtstats3.png";
+import gTwinProto1 from "../assets/gdtproto1.png";
 import rhythmMenu from "../assets/game2.png";
 import tcmenu from "../assets/tcmenu.png";
 
@@ -64,6 +68,27 @@ const Projects = () => {
             <div className={styles.spacer}></div>
           </div>
         </div>
+      </div>
+      <div className={themes.sectionCard}>
+        <h1 className={themes.sectionTitle}>Research</h1>
+        <p className={styles.sectionTxt}>This project was based around the biodiversity of our campus greenspaces, so this is where we conducted user engagement and education research.</p>
+        <p className={styles.sectionTxtEmphasis}>This project was based around the biodiversity of our campus greenspaces, so this is where we conducted user engagement and education research.</p>
+        <div className={styles.gdtStatsImgs}>
+          <img src={gTwinStats1} alt="Green Digital Twin Stats 1" className={styles.gdtStats} />
+          <img src={gTwinStats2} alt="Green Digital Twin Stats 2" className={styles.gdtStats} />
+          <img src={gTwinStats3} alt="Green Digital Twin Stats 3" className={styles.gdtStats} />
+        </div>
+      </div>
+      <div className={themes.sectionCard + ' ' + styles.gdtDesignPage}>
+        <h1 className={themes.sectionTitle + ' ' + styles.gdtDesignTitle}>Design</h1>
+        <h3 className={themes.imgLabel + ' ' + styles.imgLabel1}>User Journey Prototype</h3>
+        <img src={gTwinProto1} alt="Green Digital Twin Prototype" className={styles.gdtProto1} />
+        <div className={styles.infoCard + ' ' + styles.designInfoCard}>
+          <img src={exCircle} alt="Exclamation Circle" className={styles.exclamationIcon} />
+          <p className={styles.infoTxt}>The main purpose of these changes were to increase user retention through reducing loading times, reading unnecessary text and inputting unnecessary data</p>
+        </div>
+        <h3 className={themes.imgLabel + ' ' + styles.imgLabel2}>Design Prototype</h3>
+        <img src={gTwinProto1} alt="Green Digital Twin Prototype" className={styles.gdtProto2} />
       </div>
       <div className={themes.sectionCard}>
         <div className={styles.project} id="rhythmGame">

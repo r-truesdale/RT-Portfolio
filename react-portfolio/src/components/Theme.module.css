@@ -10,7 +10,8 @@
 
 .sectionTitle {
   font-size: 36px;
-  width: fit-content;
+  width: 10rem;
+  min-width: fit-content;
   background-color: var(--color-highlight);
   color: var(--color-bg);
   font-family: var(--font-heading);
@@ -21,4 +22,11 @@
   padding: 1vh 2vw;
   margin: 2vh 10%;
   box-shadow: var(--color-border) 6px 6px;
+  display: block;
+}
+
+.imgLabel{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
 }
