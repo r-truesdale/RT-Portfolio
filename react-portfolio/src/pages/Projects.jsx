@@ -8,6 +8,8 @@ import gTwinStats1 from "../assets/gdtstats1.png";
 import gTwinStats2 from "../assets/gdtstats2.png";
 import gTwinStats3 from "../assets/gdtstats3.png";
 import gTwinProto1 from "../assets/gdtproto1.png";
+import gTwinProto2 from "../assets/gdtProtoRender.png";
+import gTwinScreenFlow from "../assets/gdtUploadPage.png";
 import rhythmMenu from "../assets/game2.png";
 import tcmenu from "../assets/tcmenu.png";
 
@@ -72,7 +74,7 @@ const Projects = () => {
       <div className={themes.sectionCard}>
         <h1 className={themes.sectionTitle}>Research</h1>
         <p className={styles.sectionTxt}>This project was based around the biodiversity of our campus greenspaces, so this is where we conducted user engagement and education research.</p>
-        <p className={styles.sectionTxtEmphasis}>This project was based around the biodiversity of our campus greenspaces, so this is where we conducted user engagement and education research.</p>
+        <p className={styles.sectionTxtEmphasis}>User research was completed to see whether people would use their phones to scan prompts and to gauge general knowledge on biodiversity.</p>
         <div className={styles.gdtStatsImgs}>
           <img src={gTwinStats1} alt="Green Digital Twin Stats 1" className={styles.gdtStats} />
           <img src={gTwinStats2} alt="Green Digital Twin Stats 2" className={styles.gdtStats} />
@@ -85,11 +87,15 @@ const Projects = () => {
         <img src={gTwinProto1} alt="Green Digital Twin Prototype" className={styles.gdtProto1} />
         <div className={styles.infoCard + ' ' + styles.designInfoCard}>
           <img src={exCircle} alt="Exclamation Circle" className={styles.exclamationIcon} />
-          <p className={styles.infoTxt}>The main purpose of these changes were to increase user retention through reducing loading times, reading unnecessary text and inputting unnecessary data</p>
+          <p className={styles.infoTxt}>The main purpose of these changes were to increase user retention through reducing loading times and inputting unnecessary data</p>
         </div>
         <h3 className={themes.imgLabel + ' ' + styles.imgLabel2}>Design Prototype</h3>
-        <img src={gTwinProto1} alt="Green Digital Twin Prototype" className={styles.gdtProto2} />
+        <img src={gTwinProto2} alt="Green Digital Twin Prototype" className={styles.gdtProto2} />
       </div>
+      <div className={themes.sectionCard}>
+        <h1 className={themes.sectionTitle}>Finished Product</h1>
+        <img src={gTwinScreenFlow} alt="Green Digital Twin Screen Flow" className={styles.gdtScreenFlow} />
+        </div>
       <div className={themes.sectionCard}>
         <div className={styles.project} id="rhythmGame">
           <div className={styles.projIntro}>

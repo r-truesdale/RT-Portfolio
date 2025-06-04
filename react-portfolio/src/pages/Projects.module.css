@@ -264,27 +264,27 @@
 
 .imgLabel1 {
   grid-area: label;
-  height: fit-content;
-  width: 40vw;
+  width: 100%;
 }
 
 .imgLabel2 {
   grid-area: label2;
-  width: 40vw;
+  width: 100%;
 }
 
 .gdtDesignTitle {
   grid-area: title;
-  /* margin-left: 0; */
   justify-self: left;
 }
 
 .gdtProto1 {
-  width: 80%;
+  /* aspect-ratio: 2/3; */
   grid-area: img;
+  justify-self:left;
+  width:100%;
 }
 
 .gdtProto2 {
-  width: 80%;
+width:65%;
   grid-area: img2;
 }
