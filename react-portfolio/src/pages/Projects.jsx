@@ -10,7 +10,9 @@ import gTwinStats3 from "../assets/gdtstats3.png";
 import gTwinProto1 from "../assets/gdtproto1.png";
 import gTwinProto2 from "../assets/gdtProtoRender.png";
 import gTwinScreenFlow from "../assets/gdtUploadPage.png";
-import rhythmMenu from "../assets/game2.png";
+import rhythmMenu from "../assets/game1.png";
+import rhythmPlayMode from "../assets/game2.png";
+import rhythmPracticeMode from "../assets/game3.png";
 import tcmenu from "../assets/tcmenu.png";
 
 const Projects = () => {
@@ -95,7 +97,7 @@ const Projects = () => {
       <div className={themes.sectionCard}>
         <h1 className={themes.sectionTitle}>Finished Product</h1>
         <img src={gTwinScreenFlow} alt="Green Digital Twin Screen Flow" className={styles.gdtScreenFlow} />
-        </div>
+      </div>
       <div className={themes.sectionCard}>
         <div className={styles.project} id="rhythmGame">
           <div className={styles.projIntro}>
@@ -108,9 +110,25 @@ const Projects = () => {
               <div className={styles.skill}></div>
             </div>
           </div>
-          <div className={styles.infoCard}>
-            <img src={exCircle} alt="Exclamation Circle" className={styles.exclamationIcon} />
-            <p className={styles.infoTxt}>A Digital Twin is virtual representation of an object or system that’s updated from real-time data, and uses simulation to help decision making</p>
+          <div className={styles.infoCard2}>
+            <p className={styles.infoTxt}>For my university final year project I created a rhythm game in unity, using a unity store asset that allowed my to import and control MIDI music files. I also did some research into differences in how musicians and non-musicians approach these kinds of games by sending out a questionnaire to my playtesters.</p>
+          </div>
+          <p className={styles.imgTxt}>Click below to play the game!</p>
+          <a href="https://r-truesdale.github.io/Rhythm/final/index.html" target='_blank' rel="noopener noreferrer">
+            <img src={rhythmMenu} alt="Rhythm Game Menu" className={styles.rhythmMenuImg} />
+          </a>
+        </div>
+        <div className={styles.sectionCard}>
+          <p className={styles.sectionTxt}>In order to review player behavior I created two different play modes, a Game mode and a Practice mode. To keep the game interesting, I made sure to include three difficulty levels for per song.</p>
+          <div className={styles.rhythmModes}>
+            <div className={styles.modeCard}>
+              <img src={rhythmPlayMode} alt="Rhythm Game Play Mode" className={styles.rhythmPlayModeImg} />
+              <p className={styles.modeTxt}><span className={themes.bold}>Game mode:</span> The player moves a box up and down to ‘catch’ the beats on time.</p>
+            </div>
+            <div className={styles.modeCard}>
+              <img src={rhythmPracticeMode} alt="Rhythm Game Practice Mode" className={styles.rhythmPracticeModeImg} />
+            <p className={styles.modeTxt}><span className={themes.bold}>Practice mode:</span> The player just needs to keep time to the beats of the song.</p>
+            </div>
           </div>
         </div>
       </div>

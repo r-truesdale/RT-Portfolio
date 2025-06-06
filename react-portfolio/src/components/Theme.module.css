@@ -30,3 +30,7 @@
   font-weight: 700;
   color: var(--color-secondary);
 }
+
+.bold{
+  font-weight: bold;
+}
