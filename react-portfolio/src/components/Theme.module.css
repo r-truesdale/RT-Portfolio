@@ -1,8 +1,9 @@
 .sectionCard {
   width: 96vw;
-  height: 40vh;
   border: 0.3rem solid var(--color-border);
   margin: 4vh auto;
+  padding: 1rem;
+  padding-bottom: 8vh;
   background-color: var(--color-primary);
   justify-content: center;
   height: fit-content;
@@ -10,12 +11,11 @@
 
 .sectionTitle {
   font-size: 36px;
-  width: 10rem;
-  min-width: fit-content;
+  width: fit-content;
   background-color: var(--color-highlight);
   color: var(--color-bg);
   font-family: var(--font-heading);
-  font-style: italic;
+  /* font-style: italic; */
   border-radius: 0.5rem;
   font-weight: 700;
   text-align: left;
@@ -33,4 +33,9 @@
 
 .bold{
   font-weight: bold;
+}
+
+.imgText{
+  font-size: 14px;
+  text-align: center;
 }

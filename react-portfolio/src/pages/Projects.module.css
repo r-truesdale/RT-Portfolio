@@ -190,6 +190,28 @@
   align-items: center;
 }
 
+.sectionTxt {
+  font-size: 16px;
+  color: var(--color-text);
+  text-align: center;
+  margin: 2.5rem 7vw;
+  text-wrap-style: pretty;
+}
+
+.sectionTxtEmphasis {
+  font-size: 16px;
+  color: var(--color-text);
+  text-align: center;
+  margin: 5rem auto 2rem;
+  font-weight: bold;
+  border: var(--color-border) 0.4rem solid;
+  width: fit-content;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+}
+
+/* -------------------GREEN DIGITAL TWIN-------------------------------- */
+
 .gdtIntroImg {
   display: grid;
   grid-template-columns: [first] 13vw [line2] 37vw [line3] 37vw [line4] 13vw;
@@ -212,24 +234,6 @@
   place-self: center;
 }
 
-.sectionTxt {
-  font-size: 16px;
-  color: var(--color-text);
-  text-align: center;
-  margin: 4rem 7vw;
-}
-
-.sectionTxtEmphasis {
-  font-size: 16px;
-  color: var(--color-text);
-  text-align: center;
-  margin: 5rem auto 2rem;
-  font-weight: bold;
-  border: var(--color-border) 0.4rem solid;
-  width: fit-content;
-  border-radius: 0.5rem;
-  padding: 0.8rem;
-}
 
 .gdtStatsImgs {
   width: 100%;
@@ -278,7 +282,6 @@
 }
 
 .gdtProto1 {
-  /* aspect-ratio: 2/3; */
   grid-area: img;
   justify-self: left;
   width: 100%;
@@ -289,13 +292,14 @@
   grid-area: img2;
 }
 
-/* ----------------------------Rhythm Game------------------------------*/
+/* ----------------------------RHYTHM GAME  ------------------------------*/
 .rhythmMenuImg {
   display: flex;
   margin: 2rem auto;
   outline: var(--color-border) 0.3rem solid;
   padding: 1%;
   transition: .3s ease-in-out, outline 0.3s ease-out;
+  height: 30rem;
 }
 
 .rhythmMenuImg:hover {
@@ -313,26 +317,104 @@
   font-weight: 700;
 }
 
-.rhythmModes {
+.rhythmModes,
+.rhythmStats {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .rhythmPlayModeImg,
 .rhythmPracticeModeImg {
   width: 100%;
   height: auto;
-
 }
 
 .modeCard {
-  /* max-width: fit-content; */
   width: 40%;
   border: var(--color-border) 0.3rem solid;
   padding: 1rem;
 }
 
-.modeTxt {
-  width: 100%
+/* .modeTxt {
+  width: 100%; 
+   text-align: center;
+} */
+
+.rhythmStatsCard {
+  width: 32%;
+  border: var(--color-border) 0.3rem solid;
+  padding: 0.3rem;
+}
+
+.rhythmStatsImgs {
+  width: 100%;
+  height: auto;
+}
+
+.uiImgs {
+  justify-content: center;
+  display: grid;
+  grid-template-areas:
+    " . a b b c . "
+    " d d d e e e";
+  gap: 1rem;
+}
+
+.gameColours {
+  grid-area: a;
+  justify-self: end;
+  /* width: fit-content; */
+  height: 40vh;
+}
+
+.mainMenu {
+  grid-area: b;
+  justify-self: center;
+  height: 40vh;
+}
+
+.pracColours {
+  grid-area: c;
+  justify-self: start;
+  width: fit-content;
+}
+
+.gameMenu {
+  grid-area: d;
+  justify-self: end;
+  /* width: fit-content; */
+  height: 40vh;
+}
+
+.pracMenu {
+  grid-area: e;
+  justify-self: start;
+  /* width:fit-content; */
+  height: 40vh;
+}
+
+/* ---------------------------TAKING CHARGE-------------------------------- */
+.tcMenu {
+  display: flex;
+  margin: 2rem auto;
+  outline: var(--color-border) 0.3rem solid;
+  padding: 1%;
+  height: 30rem;
+  transition: .3s ease-in-out, outline 0.3s ease-out;
+}
+
+.tcUserFlow {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.tcImgLabel {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  width: fit-content;
+  padding: 0.5rem;
+  margin-top: 5rem;
 }
