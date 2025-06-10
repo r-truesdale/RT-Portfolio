@@ -1,8 +1,8 @@
 .sectionCard {
-  width: 96vw;
+  width: 96%;
   border: 0.3rem solid var(--color-border);
   margin: 4vh auto;
-  padding: 1rem;
+  padding: 2rem;
   padding-bottom: 8vh;
   background-color: var(--color-primary);
   justify-content: center;
@@ -10,7 +10,7 @@
 }
 
 .sectionTitle {
-  font-size: 36px;
+  font-size: 48px;
   width: fit-content;
   background-color: var(--color-highlight);
   color: var(--color-bg);
@@ -20,7 +20,8 @@
   font-weight: 700;
   text-align: left;
   padding: 1vh 2vw;
-  margin: 2vh 10%;
+  /* margin: 2vh 10%; */
+  margin-bottom: 4rem;
   box-shadow: var(--color-border) 6px 6px;
   display: block;
 }
@@ -38,4 +39,17 @@
 .imgText{
   font-size: 14px;
   text-align: center;
+}
+
+.mainImg{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.subheading{
+  font-size: var(--size-subheading);
+  font-family: var(--font-heading);
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin: 4em 0 1em 0;
 }

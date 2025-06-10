@@ -10,6 +10,7 @@ function Contact() {
         <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
         <ul className={styles.contactList}>
           <li>Email: <a href="mailto:r-truesdale@outlook.com">r-truesdale@outlook.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/rebecca-truesdale/" target="_blank" rel="noopener noreferrer">Richard Truesdale</a></li>
         </ul>
       </div>
     </div>

@@ -194,7 +194,8 @@
   font-size: 16px;
   color: var(--color-text);
   text-align: center;
-  margin: 2.5rem 7vw;
+   margin: 2.5rem 7vw; 
+  /* width: 50%; */
   text-wrap-style: pretty;
 }
 
@@ -365,13 +366,13 @@
   grid-area: a;
   justify-self: end;
   /* width: fit-content; */
-  height: 40vh;
+  height: 50vh;
 }
 
 .mainMenu {
   grid-area: b;
   justify-self: center;
-  height: 40vh;
+  height: 50vh;
 }
 
 .pracColours {
@@ -384,14 +385,14 @@
   grid-area: d;
   justify-self: end;
   /* width: fit-content; */
-  height: 40vh;
+  height: 50vh;
 }
 
 .pracMenu {
   grid-area: e;
   justify-self: start;
   /* width:fit-content; */
-  height: 40vh;
+  height: 50vh;
 }
 
 /* ---------------------------TAKING CHARGE-------------------------------- */
@@ -404,12 +405,6 @@
   transition: .3s ease-in-out, outline 0.3s ease-out;
 }
 
-.tcUserFlow {
-  width: 100%;
-  display: flex;
-  margin: auto;
-}
-
 .tcImgLabel {
   font-size: 20px;
   font-weight: 700;
@@ -417,4 +412,13 @@
   width: fit-content;
   padding: 0.5rem;
   margin-top: 5rem;
+}
+
+.tcImgs{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap : 10px;
+}
+.tcImg{
+  width:100%;
 }

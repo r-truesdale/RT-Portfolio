@@ -24,10 +24,15 @@ import mainMenu from "../assets/gamemenu.png";
 import gameMenu from "../assets/gamelevel1.jpg";
 import pracMenu from "../assets/gamelevel2.png";
 // --------------TAKING CHARGE-----------------
-import tcmenu from "../assets/tcmenu.jpg";
+import tcmenu from "../assets/tcmenu.png";
 import tcUserFlow from "../assets/user flow.png";
 import tcFinalProto from "../assets/finalprototype.png";
-
+import tcStoryboard from "../assets/storyboard.png";
+import tcCorrect from "../assets/tcCorrect.png";
+import tcIncorrect from "../assets/tcIncorrect.png";
+import tcLevelSelect from "../assets/tcLevelSelect.png";
+import tcHint from "../assets/tcHint.png";
+import tcTutorial from "../assets/tcTutorial.png";
 const Projects = () => {
   const handleScrollTo = (id) => {
     const el = document.getElementById(id);
@@ -58,8 +63,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className={themes.sectionCard}>
-        <div className={styles.project} id="greenDigital">
+      <div className={themes.sectionCard} id="greenDigital">
+        <div className={styles.project}>
           <div className={styles.projIntro}>
             <h1 className={styles.projTitle} >Green Digital Twin</h1>
             <p className={styles.introTxt}>Brief: Group project to create a “Green Digital Twin” that will help to improve people’s awareness, understanding and stewardship of the green spaces around them.</p>
@@ -111,8 +116,8 @@ const Projects = () => {
         <h1 className={themes.sectionTitle}>Finished Product</h1>
         <img src={gTwinScreenFlow} alt="Green Digital Twin Screen Flow" className={styles.gdtScreenFlow} />
       </div>
-      <div className={themes.sectionCard}>
-        <div className={styles.project} id="rhythmGame">
+      <div className={themes.sectionCard} id="rhythmGame">
+        <div className={styles.project} >
           <div className={styles.projIntro}>
             <h1 className={styles.projTitle} >Rhythm Game</h1>
             <p className={styles.introTxt}>Brief: Group project to create a “Green Digital Twin” that will help to improve people’s awareness, understanding and stewardship of the green spaces around them.</p>
@@ -165,16 +170,16 @@ const Projects = () => {
       <div className={themes.sectionCard}>
         <div className={themes.sectionTitle}>UI</div>
         <p className={styles.sectionTxt}>To give the player consistency I made sure the different game types had their own colour theme, but had the same overall layout and design. </p>
-      <div className={styles.uiImgs }>
-        <img src={gameColours} alt="Game Colors" className={styles.gameColours} />
-        <img src={mainMenu} alt="Main Menu" className={styles.mainMenu} />
-        <img src={pracColours} alt="Practice Colours" className={styles.pracColours} />
-        <img src={gameMenu} alt="Game Menu" className={styles.gameMenu} />
-        <img src={pracMenu} alt="Practice Menu" className={styles.pracMenu} /> 
+        <div className={styles.uiImgs}>
+          <img src={gameColours} alt="Game Colors" className={styles.gameColours} />
+          <img src={mainMenu} alt="Main Menu" className={styles.mainMenu} />
+          <img src={pracColours} alt="Practice Colours" className={styles.pracColours} />
+          <img src={gameMenu} alt="Game Menu" className={styles.gameMenu} />
+          <img src={pracMenu} alt="Practice Menu" className={styles.pracMenu} />
+        </div>
       </div>
-      </div>
-      <div className={themes.sectionCard}>
-        <div className={styles.project} id="takingCharge">
+      <div className={themes.sectionCard} id="takingCharge">
+        <div className={styles.project}>
           <div className={styles.projIntro}>
             <h1 className={styles.projTitle} >Taking Charge</h1>
             <p className={styles.introTxt}>Brief: Group project to design and implement an educational application with a controllable environment.</p>
@@ -191,15 +196,28 @@ const Projects = () => {
           <img src={tcmenu} alt="Taking Charge Menu" className={styles.tcMenu} />
         </div>
       </div>
-       <div className={themes.sectionCard}>
+      <div className={themes.sectionCard}>
         <h1 className={themes.sectionTitle}>Design</h1>
         <p className={styles.sectionTxt}>This project idea was reached from reaching out to GCSE aged people and asking which subjects they needed more help understanding or which was their least favourite subject and why. We asked these questions to people who had completed their GCSEs for additional responses. Physics was a common problem subject with people saying they had trouble visualizing certain concepts.</p>
         <p className={styles.sectionTxtEmphasis}>Prototypes and storyboards were iterated upon until we reached our final high fidelity prototype. I have shown the progression of the design process below.</p>
-        <p className={styles.tcImgLabel}>User Flow Diagram</p>
-        <img src={tcUserFlow} alt="Taking Charge User Flow" className={styles.tcUserFlow} />
-        <p className={styles.tcImgLabel}>Final Prototype</p>
-        <img src={tcFinalProto} alt="Taking Charge Final Prototype" className={styles.tcUserFlow}/>
+        <p className={themes.subheading}>User Flow Diagram</p>
+        <img src={tcUserFlow} alt="Taking Charge User Flow" className={themes.mainImg} />
+        <p className={themes.subheading}>Storyboard</p>
+        <img src={tcStoryboard} alt="Taking Charge Storyboard" className={themes.mainImg} />
+        <p className={themes.subheading}>Design Prototype</p>
+        <img src={tcFinalProto} alt="Taking Charge Final Prototype" className={themes.mainImg} />
+      </div>
+      <div className={themes.sectionCard}>
+        <h1 className={themes.sectionTitle}>Finished Project</h1>
+        <div className={styles.tcImgs}>
+        <img src={tcmenu} alt="Taking Charge Menu" className={styles.tcImg} />
+        <img src={tcTutorial} alt="Taking Charge Tutorial" className={styles.tcImg} />
+        <img src={tcLevelSelect} alt="Taking Charge Level Select" className={styles.tcImg} />
+        <img src={tcIncorrect} alt="Taking Charge Incorrect Answer" className={styles.tcImg} />
+        <img src={tcHint} alt="Taking Charge Hint" className={styles.tcImg} />
+        <img src={tcCorrect} alt="Taking Charge Correct Answer" className={styles.tcImg} />
         </div>
+      </div>
     </div >
   )
 }

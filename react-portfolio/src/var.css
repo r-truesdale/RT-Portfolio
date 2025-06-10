@@ -11,4 +11,6 @@
  /* Fonts */
  --font-main: 'Lexend Variable', sans-serif;
  --font-heading:'Roboto Mono Variable', monospace;
+  /* Sizes */
+  --size-subheading: 2em;
 }
