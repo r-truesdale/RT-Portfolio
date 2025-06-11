@@ -1,5 +1,24 @@
 @import "../var.css";
 
+.topBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  background-color: var(--color-tertiary-trans);
+  border: 2px solid var(--color-tertiary);
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.8rem;
+  font-size: 2.5rem;
+  transition: background-color 0.4s;
+}
+
+.topBtn:hover {
+  background-color: var(--color-tertiary);
+  transition: background-color 0.4s;
+}
+
 .projSection {
   padding-bottom: 5vh;
 }
@@ -84,9 +103,9 @@
   text-align: center;
 }
 
-@media screen and (min-width: 651px) {
+@media screen and (min-width: 850px) {
   .projTitle {
-    font-size: 5vh;
+    font-size: 4rem;
   }
 
   .introTxt {
@@ -105,9 +124,22 @@
     font-size: 16px;
   }
 
+  .sectionTxt {
+    font-size: 1rem;
+  }
+
+  .finalText1,
+  .finalText2,
+  .finalText3,
+  .finalText4 {
+    font-size: 1rem;
+  }
+    .skills{
+    font-size: 2rem;
+  }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 849px) {
   .projTitle {
     font-size: 3vh;
   }
@@ -127,6 +159,20 @@
   .infoTxt {
     font-size: 8px;
   }
+
+  .sectionTxt {
+    font-size: 0.5rem;
+  }
+
+  .finalText1,
+  .finalText2,
+  .finalText3,
+  .finalText4 {
+    font-size: 0.5rem;
+  }
+  .skills{
+    font-size: 0.5rem;
+  }
 }
 
 .projTitle {}
@@ -139,7 +185,6 @@
 .skills {
   color: var(--color-secondary);
   font-weight: 700;
-  font-size: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -191,12 +236,20 @@
 }
 
 .sectionTxt {
-  font-size: 16px;
+  /* font-size: 16px; */
   color: var(--color-text);
-  text-align: center;
-   margin: 2.5rem 7vw; 
+  /* text-align: center; */
+  margin: 2.5rem 0;
   /* width: 50%; */
-  text-wrap-style: pretty;
+  /* text-wrap-style: pretty; */
+  /* text-wrap-style:auto; */
+  text-align: justify;
+}
+
+.sectionTxt2 {
+  width: 100%;
+  margin: 2.5rem 0;
+  text-wrap-style: auto;
 }
 
 .sectionTxtEmphasis {
@@ -238,59 +291,132 @@
 
 .gdtStatsImgs {
   width: 100%;
-  height: 58vh;
+  /* height: 19em; */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: auto;
-  padding: 2vh 0;
+  justify-content: space-between;
 }
 
-.gtdStats {
+.gdtStats1, .gdtStats3 {
+  width: 24%;
+  /* max-height: fit-content; */
+  /* flex:20%; */
+  align-self: stretch;
+}
+.gdtStats1Img,.gdtStats3Img {
+  width: 100%;
+  height: 100%;
+}
+.gdtStats1Img{
+  height: 100%;
+}
+.gdtStats2Img {
+  width: 100%;
   height: 100%;
 }
 
-.gdtDesignPage {
-  display: grid;
-  grid-template-areas:
-    "title title title"
-    "label . label2"
-    "img txt img2"
-    "img . img2";
-  justify-items: center;
-  text-align: center;
+.gdtStats2 {
+  width: 50%;
 }
 
 .designInfoCard {
-  grid-area: txt;
-  width: 16rem;
-  margin: 0;
+  width: 20rem;
+  margin: 50% auto;
 }
 
-.imgLabel1 {
-  grid-area: label;
-  width: 100%;
+.designInfoTxt {
+  text-align: justify;
+  padding: 2em;
 }
 
-.imgLabel2 {
-  grid-area: label2;
+.imgLabel {
   width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding-bottom: 1em;
 }
+
 
 .gdtDesignTitle {
-  grid-area: title;
   justify-self: left;
+}
+
+.proto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  align-content: end;
+  gap: 1.2rem;
+}
+
+.proto1 {
+  /* min-height: fit-content; */
+  /* width: 40%; */
+  height: 50vw;
+  width: fit-content;
+}
+
+.proto2 {
+  /* min-height: fit-content; */
+  text-align: end;
+
+  height: 50vw;
 }
 
 .gdtProto1 {
-  grid-area: img;
-  justify-self: left;
-  width: 100%;
+  height: 90%;
+  width: auto;
 }
 
 .gdtProto2 {
-  width: 65%;
-  grid-area: img2;
+  height: 90%;
+  width: auto;
+}
+
+.gdtProtoTxt {
+  width: 20%;
+}
+
+.gdtMap {
+  width: 30%;
+}
+
+.gdtFinalImg {
+  width: 100%;
+  /* height: fit-content; */
+}
+
+.gdtFinalImgContainer {
+  /* float: right; */
+  /* width: 70%; */
+}
+
+.gdtFinished {
+  display: flex;
+  flex-direction: row;
+}
+
+.finalTextBlock {
+  /* width: 40%; */
+}
+
+.finalText1 {
+  padding: 8% 1em 0 0;
+}
+
+.finalText2,
+.finalText3 {
+  padding: 20% 1em 0 0;
+}
+
+.finalText3 {
+  padding: 40% 1em 0 0;
+
+}
+
+.finalText4 {
+  padding: 40% 1em 0 0;
 }
 
 /* ----------------------------RHYTHM GAME  ------------------------------*/
@@ -322,7 +448,7 @@
 .rhythmStats {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .rhythmPlayModeImg,
@@ -332,15 +458,15 @@
 }
 
 .modeCard {
-  width: 40%;
+  width: 49%;
   border: var(--color-border) 0.3rem solid;
   padding: 1rem;
 }
 
-/* .modeTxt {
-  width: 100%; 
-   text-align: center;
-} */
+.modeTxt {
+  text-align: balance;
+  font-size: var(--size-small);
+}
 
 .rhythmStatsCard {
   width: 32%;
@@ -378,21 +504,23 @@
 .pracColours {
   grid-area: c;
   justify-self: start;
-  width: fit-content;
+  height: 50vh;
 }
 
 .gameMenu {
   grid-area: d;
   justify-self: end;
   /* width: fit-content; */
-  height: 50vh;
+  /* height: 50vh; */
+  max-width: 100%;
+
 }
 
 .pracMenu {
   grid-area: e;
   justify-self: start;
-  /* width:fit-content; */
-  height: 50vh;
+  max-width: 100%;
+  /* height: 50vh; */
 }
 
 /* ---------------------------TAKING CHARGE-------------------------------- */
@@ -401,7 +529,8 @@
   margin: 2rem auto;
   outline: var(--color-border) 0.3rem solid;
   padding: 1%;
-  height: 30rem;
+  /* height: 30rem; */
+  max-width: 70%;
   transition: .3s ease-in-out, outline 0.3s ease-out;
 }
 
@@ -414,11 +543,12 @@
   margin-top: 5rem;
 }
 
-.tcImgs{
+.tcImgs {
   display: grid;
   grid-template-columns: auto auto;
-  gap : 10px;
+  gap: 10px;
 }
-.tcImg{
-  width:100%;
+
+.tcImg {
+  width: 100%;
 }

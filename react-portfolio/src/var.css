@@ -4,6 +4,7 @@
  --color-primary: #FAF6DD;
  --color-secondary: #8D3F2A;
  --color-tertiary: #335C67;
+ --color-tertiary-trans: rgb( 51,92,103, 0.6);
  --color-bg: #F4EEEC;
  --color-border: #1B383F;
  --color-highlight: #D8A646;
@@ -12,5 +13,10 @@
  --font-main: 'Lexend Variable', sans-serif;
  --font-heading:'Roboto Mono Variable', monospace;
   /* Sizes */
-  --size-subheading: 2em;
+  --size-subheading: 3em;
+  --size-heading:4rem;
+  --size-title: 4em;
+  --size-title-small: 2em;
+  --size-subheading-small: 1em;
+  --size-small:0.875rem;
 }

@@ -1,1 +1,41 @@
 @import "../var.css";
+
+.contactList{
+  list-style: none;
+}
+
+.contactTitle{
+  font-size: var(--size-heading);
+  font-family: var(--font-heading);
+  color:var(--color-secondary);
+}
+
+a{
+  text-decoration: none;
+    color:var(--color-text);
+      margin: auto 1em ;
+    /* padding-left: 1em; */
+    /* margin: auto; */
+    /* vertical-align: middle; */
+}
+
+a:hover{
+  color: var(--color-tertiary);
+}
+
+h2{
+  font-weight: 500;
+}
+
+.contactList li{
+  font-size: var(--size-subheading);
+  height:var(--size-subheading);
+  display: flex;
+  margin-top: 2em;
+}
+
+.emailSVG, .linkedinSVG{
+  width: 1.5em;
+  margin: auto 0;
+  height: 1.5em;
+}
