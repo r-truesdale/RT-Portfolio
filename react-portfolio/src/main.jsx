@@ -8,7 +8,7 @@ import '@fontsource-variable/roboto-mono';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/RT-Portfolio">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   </StrictMode>,
