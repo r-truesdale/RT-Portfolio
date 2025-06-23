@@ -58,12 +58,12 @@ const Projects = () => {
           <div className={styles.projCard} onClick={() => handleScrollTo('rhythmGame')} style={{ cursor: 'pointer' }}>
             <h2 className={styles.projName}>Rhythm Game</h2>
             <img src={rhythmMenu} alt="Rhythm Thumbnail" className={styles.projThumbnail} />
-            <p className={styles.projDesc}>Unity and C# rhythm game, midi files, stats, final year project</p>
+            <p className={styles.projDesc}>A rhythm game created with Unity, using C#. Developed as my final year project at university, focusing on helping players improve their overall rhythm abilities.</p>
           </div>
           <div className={styles.projCard} onClick={() => handleScrollTo('takingCharge')} style={{ cursor: 'pointer' }}>
             <h2 className={styles.projName}>Taking Charge</h2>
             <img src={tcmenu} alt="Taking Charge Thumbnail" className={styles.projThumbnail} />
-            <p className={styles.projDesc}>Web app for GCSE circuits help</p>
+            <p className={styles.projDesc}> A web app developed to support GCSE students when learning about the circuits topic in physics.</p>
           </div>
         </div>
       </div>
